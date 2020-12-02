@@ -1,8 +1,10 @@
 
 ## Markdown-Preview
 _____
-![preview](https://bunyaminozturk.com.tr/i/5zRuyj.png =1422x650)
-____
+<p align="center">
+<img  src="https://bunyaminozturk.com.tr/i/5zRuyj.png">
+</p>
+
  
 ##### **Yep you are right this project is using ShowdownJS**
 
