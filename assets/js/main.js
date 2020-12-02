@@ -13,7 +13,6 @@ textEditor.addEventListener('keyup', evt => {
   textPreview.innerHTML = html;
 })
 
-
 /* https://github.com/Rob--W/cors-anywhere/blob/master/demo.html */
 var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
 function createPasteEditor(options, printResult) {
@@ -27,7 +26,6 @@ function createPasteEditor(options, printResult) {
   }
   x.send(textEditor.value ? textEditor.value : " ");
 }
-
 function createPastePreview(options, printResult) {
   var x = new XMLHttpRequest();
   x.open(options.method, cors_api_url + "https://hastebin.com/documents");
@@ -81,7 +79,6 @@ function copyToClipboard(text) {
     }
   }
 }
-
 const fileDownload = (content, filename, contentType) => {
   const a = document.createElement('a');
   const file = new Blob([content], {type: contentType});
@@ -91,7 +88,6 @@ const fileDownload = (content, filename, contentType) => {
   alert("file saved!")
 	URL.revokeObjectURL(a.href);
 };
-
 textEditorDownloadFile.addEventListener('click', () => {
   fileDownload(textEditor.value, 'MarkdownPreview.md', 'text/plain');
 });
@@ -100,7 +96,6 @@ textEditorUploadToHastebin.addEventListener('click', event => {
     copyToClipboard(data)
   })
 })
-
 textPreviewDownloadFile.addEventListener('click', () => {
   fileDownload(textPreview.innerHTML, 'MarkdownPreview.html', 'text/plain');
 });

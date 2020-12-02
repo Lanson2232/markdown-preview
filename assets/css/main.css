@@ -1,0 +1,28 @@
+.navigationbar{
+    padding:15px;
+    color:#FFF;
+    width: 100%;
+    background:#212529;
+}
+.navigationbar > .text{
+    margin:auto;
+    text-align: center;
+}
+
+
+.github{
+    text-decoration: none;
+    float:right;
+    color:#FFF;
+    font-size: 35px;
+    margin-top: -10px;
+    margin-right: 25px;
+}
+
+.github:hover{
+    color:#FFF;
+}
+
+body{
+    background: #343a40;
+}
