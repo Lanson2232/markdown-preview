@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Basic Markdown Preview application"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<title>Markdown Preview | Lanson2232</title>
+</head>
+<body>
+    <div class="navigationbar" style="padding-right: 0;">
+        <div class="text">
+            <h4>Markdown Preview | Lanson2232</h4>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row"  style="margin: auto;">
+            <div class="col-md-6">
+                <div style="width:100%;" class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Editor</h3>
+                        </div>
+                        <textarea name="" class="form-control" style="height: 71vh;" id="editor" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div style="width:100%;" class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Preview</h3>
+                        </div>
+                        <div  class="form-control disabled" style="height: 71vh; overflow:auto;" id="preview"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 10px;" class="col-md-12">
+                <div class="row" style="margin:auto;">
+                    <div class="col-md-3">
+                        <a id="editorDownloadFile" class="btn btn-primary w-100">Save Editor to file</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a id="editorUploadToHastebin" class="btn btn-info w-100">Upload Editor to hastebin</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a id="previewDownloadFile" class="btn btn-primary w-100">Save Preview to file(as html)</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a id="previewUploadToHastebin" class="btn btn-info w-100">Upload Preview to hastebin(as html)</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="navigationbar" style="padding-right: 0;">
+        <div class="text">
+            <h4>Markdown Preview | Lanson2232</h4>
+        </div>
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+</body>
+</html>
